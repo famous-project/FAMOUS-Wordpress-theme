@@ -20,13 +20,14 @@
       $indent = str_repeat("\t", $depth);
       $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
     }
- 
+
+	// <ul><li><a>#</a> => <ul> <li></li> </ul>
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
       $item_html = '';
       parent::start_el($item_html, $item, $depth, $args);
  
       if (($item->hasChildren) && ($depth === 0)) {
-        $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"', $item_html);
+        $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="dropdown" href="#"', $item_html);
         $item_html = str_replace('</a>', ' <b class="caret"></b></a>', $item_html);
       }
  

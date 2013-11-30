@@ -28,10 +28,38 @@
   <![endif]-->
 </head>
 <body <?php body_class(); ?>>
-  <div class="container">
-  
+<div class="container">
+
+
+	<h3 class="text-muted"><a href="<?php echo home_url(); ?>" title="<?php echo get_bloginfo('title'); ?>"><img style="width:200px;" src="https://raw.github.com/SimonWaldherr/PIS-draft/master/logodrafts/d01.png" alt="FAMOUS"></a></h3>
   	<div id="login-members"><a id="log-in" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a></div>
-  
+ 
+ 
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+      <span class="sr-only">Navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  	<!-- Collect the nav links for toggling -->
+  <?php // Loading WordPress Custom Menu
+	wp_nav_menu( array(
+		'container_class' => 'collapse navbar-collapse navbar-collapse',
+		'menu_class'      => 'nav navbar-nav',
+		'container_id'    => 'bs-example-navbar-collapse-2',
+		'walker'          => new Cwd_wp_bootstrapwp_Walker_Nav_Menu()
+	) );
+  ?>
+</nav>
+    
+
+<?php
+//home nav
+/*
     <div class="masthead">
        <h3 class="text-muted"><a href="<?php echo home_url(); ?>" title="<?php echo get_bloginfo('title'); ?>"><img style="width:200px;" src="https://raw.github.com/SimonWaldherr/PIS-draft/master/logodrafts/d01.png" alt="FAMOUS"></a></h3>
        		<!-- Collect the nav links for toggling -->
@@ -39,46 +67,10 @@
          		wp_nav_menu( array(
             		'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
             		'menu_class'      => 'nav nav-justified',
-            		'menu_id'         => 'main-menu',
+            		#'menu_id'         => 'main-menu',
             		'walker'          => new Cwd_wp_bootstrapwp_Walker_Nav_Menu()
         		) );
       		?>   
     </div>
-
-
-
-<?php
-//home nav
-/*
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- Mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-        <!-- Collect the nav links for toggling -->
-      	<?php // Loading WordPress Custom Menu
-         	wp_nav_menu( array(
-            'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
-            'menu_class'      => 'nav nav-justified',
-            'menu_id'         => 'main-menu',
-            'walker'          => new Cwd_wp_bootstrapwp_Walker_Nav_Menu()
-        	) );
-      	?>   
-    </nav>
 */
 ?>
-
-
-
-
-
-<div class="jumbotron" style=" background:url(img/bg.png) center center transparent no-repeat;">
-        		<br>
-        		<h1 style="padding-bottom:12px;"><span style="color:#22A6DA;">Etiamde </span><span style="color:#0E566D;">Null!</span></h1>       		
-        		<p class="lead">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. <br>Nullam id dolor id nibh ultricies vehicula</p>
-</div>

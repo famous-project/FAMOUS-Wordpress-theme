@@ -1,3 +1,4 @@
+<?php
 /**
  * The main template file.
  *
@@ -16,13 +17,23 @@
 	// Gets header.php
 	get_header();
 ?>
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	  	
-	  	<?php the_content(); ?>
 
-	<?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
-	<?php endif; ?>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Blogseite</h1>
 
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+  	<p><em><?php the_time('l, F jS, Y'); ?></em></p>
+  	
+  	<hr>
+    
+    
+    <?php endwhile; else: ?>
+      <p><?php _e('Sorry, there are no posts.'); ?></p>
+    <?php endif; ?>
+
+  </div>
+</div>
 
 <?php get_footer(); ?>
