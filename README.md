@@ -50,4 +50,5 @@ _Werden mit dem PostType "projects" vergeben_
 ##Image Width
 - max 300x300
 
-##facebook + openID (OK!)
+##Facebook Meta 
+- find in function.php (OK!)
