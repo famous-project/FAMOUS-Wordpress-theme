@@ -9,7 +9,6 @@
  * @return void
  */
 
-<<<<<<< HEAD
 ################################################# SETUP #################################################
 
 function famous_setup() {
@@ -108,8 +107,6 @@ add_action( 'wp_enqueue_scripts', 'famous_scripts_styles' );
 
 
 
-=======
->>>>>>> df3739a3077c5f067c1e63acdb4cf83c9b0aff43
 ################################################# HEADER #################################################
 
 //Adding the Open Graph in the Language Attributes
@@ -152,11 +149,7 @@ function cwd_wp_bootstrap_scripts_styles() {
   wp_enqueue_script('bootstrapjs', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js', array('jquery'),'3.0.2', true );
   
   // Loads Bootstrap minified CSS file.
-<<<<<<< HEAD
   wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', false ,'3.0.2');
-=======
-  wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', true ,'3.0.2');
->>>>>>> df3739a3077c5f067c1e63acdb4cf83c9b0aff43
   
   // Loads our main stylesheet.
   wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', array('bootstrapwp') ,'1.0');
@@ -181,7 +174,6 @@ add_action( 'after_setup_theme', 'cwd_wp_bootstrapwp_theme_setup' );
 //include navigation
 require_once 'inc/nav.php';
 
-<<<<<<< HEAD
 
 
 
@@ -211,5 +203,3 @@ function famous_widgets_init() {
 
 }
 add_action( 'widgets_init', 'famous_widgets_init' );
-=======
->>>>>>> df3739a3077c5f067c1e63acdb4cf83c9b0aff43
