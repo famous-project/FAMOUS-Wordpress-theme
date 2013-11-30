@@ -73,10 +73,7 @@
 */
 ?>
 
-
-
-
-
+<!--Tests-->
 <div class="jumbotron" style=" background:url(img/bg.png) center center transparent no-repeat;">
         		<br>
         		<h1 style="padding-bottom:12px;"><span style="color:#22A6DA;">Etiamde </span><span style="color:#0E566D;">Null!</span></h1>       		
