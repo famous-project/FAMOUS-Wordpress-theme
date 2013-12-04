@@ -46,6 +46,46 @@ _Werden mit dem PostType "projects" vergeben_
 - Grau1
 - Grau2
 - Grau3
+<Pre>
+<ul class="blend_list">
+					<li class="current" id="swcell1">
+						<div class="blend_thumb">
+							<div id="col1" onclick="editcolor(1);" class="blend_color" style="background-color: rgb(23, 63, 143);">&nbsp;</div>
+							<dl id="RGB1" class="blend_rgb"><dt>HTML</dt> <dd>#173F8F</dd><dt>RGB</dt> <dd>23/63/143</dd></dl>
+						</div>
+					</li>
+					<li id="swcell2" class="">
+						<div class="blend_thumb">
+							<div id="col2" onclick="editcolor(2);" class="blend_color" style="background-color: rgb(35, 96, 219);">&nbsp;</div>
+							<dl id="RGB2" class="blend_rgb"><dt>HTML</dt> <dd>#2360DB</dd><dt>RGB</dt> <dd>35/96/219</dd></dl>
+						</div>
+					</li>
+					<li id="swcell3" class="">
+						<div class="blend_thumb">
+							<div id="col3" onclick="editcolor(3);" class="blend_color" style="background-color: rgb(80, 101, 143);">&nbsp;</div>
+							<dl id="RGB3" class="blend_rgb"><dt>HTML</dt> <dd>#50658F</dd><dt>RGB</dt> <dd>80/101/143</dd></dl>
+						</div>
+					</li>
+					<li id="swcell4" class="">
+						<div class="blend_thumb">
+							<div id="col4" onclick="editcolor(4);" class="blend_color" style="background-color: rgb(123, 155, 219);">&nbsp;</div>
+							<dl id="RGB4" class="blend_rgb"><dt>HTML</dt> <dd>#7B9BDB</dd><dt>RGB</dt> <dd>123/155/219</dd></dl>
+						</div>
+					</li>
+					<li id="swcell5" class="">
+						<div class="blend_thumb">
+							<div id="col5" onclick="editcolor(5);" class="blend_color" style="background-color: rgb(112, 112, 112);">&nbsp;</div>
+							<dl id="RGB5" class="blend_rgb"><dt>HTML</dt> <dd>#707070</dd><dt>RGB</dt> <dd>112/112/112</dd></dl>
+						</div>
+					</li>
+					<li id="swcell6" class="">
+						<div class="blend_thumb">
+							<div id="col6" onclick="editcolor(6);" class="blend_color" style="background-color: rgb(143, 143, 143);">&nbsp;</div>
+							<dl id="RGB6" class="blend_rgb"><dt>HTML</dt> <dd>#8F8F8F</dd><dt>RGB</dt> <dd>143/143/143</dd></dl>
+						</div>
+					</li>
+				</ul>
+</pre>
 
 ##Image Width
 - max 300x300
