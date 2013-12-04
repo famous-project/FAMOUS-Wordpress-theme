@@ -35,57 +35,37 @@ _Werden mit dem PostType "projects" vergeben_
 - sort DECS
 
 ##Colors
-**Farben**
+**Primary Color:**
 
-- Color1
-- Color2
-- Color3
+   var. 1 = #1C4C98 = rgb(28,76,152)
+   var. 2 = #2E415F = rgb(46,65,95)
+   var. 3 = #031E48 = rgb(3,30,72)
+   var. 4 = #709DE5 = rgb(112,157,229)
+   var. 5 = #A8C0E5 = rgb(168,192,229)
 
-**Graustufen**
+**Secondary Color A:**
 
-- Grau1
-- Grau2
-- Grau3
-<Pre>
-<ul class="blend_list">
-					<li class="current" id="swcell1">
-						<div class="blend_thumb">
-							<div id="col1" onclick="editcolor(1);" class="blend_color" style="background-color: rgb(23, 63, 143);">&nbsp;</div>
-							<dl id="RGB1" class="blend_rgb"><dt>HTML</dt> <dd>#173F8F</dd><dt>RGB</dt> <dd>23/63/143</dd></dl>
-						</div>
-					</li>
-					<li id="swcell2" class="">
-						<div class="blend_thumb">
-							<div id="col2" onclick="editcolor(2);" class="blend_color" style="background-color: rgb(35, 96, 219);">&nbsp;</div>
-							<dl id="RGB2" class="blend_rgb"><dt>HTML</dt> <dd>#2360DB</dd><dt>RGB</dt> <dd>35/96/219</dd></dl>
-						</div>
-					</li>
-					<li id="swcell3" class="">
-						<div class="blend_thumb">
-							<div id="col3" onclick="editcolor(3);" class="blend_color" style="background-color: rgb(80, 101, 143);">&nbsp;</div>
-							<dl id="RGB3" class="blend_rgb"><dt>HTML</dt> <dd>#50658F</dd><dt>RGB</dt> <dd>80/101/143</dd></dl>
-						</div>
-					</li>
-					<li id="swcell4" class="">
-						<div class="blend_thumb">
-							<div id="col4" onclick="editcolor(4);" class="blend_color" style="background-color: rgb(123, 155, 219);">&nbsp;</div>
-							<dl id="RGB4" class="blend_rgb"><dt>HTML</dt> <dd>#7B9BDB</dd><dt>RGB</dt> <dd>123/155/219</dd></dl>
-						</div>
-					</li>
-					<li id="swcell5" class="">
-						<div class="blend_thumb">
-							<div id="col5" onclick="editcolor(5);" class="blend_color" style="background-color: rgb(112, 112, 112);">&nbsp;</div>
-							<dl id="RGB5" class="blend_rgb"><dt>HTML</dt> <dd>#707070</dd><dt>RGB</dt> <dd>112/112/112</dd></dl>
-						</div>
-					</li>
-					<li id="swcell6" class="">
-						<div class="blend_thumb">
-							<div id="col6" onclick="editcolor(6);" class="blend_color" style="background-color: rgb(143, 143, 143);">&nbsp;</div>
-							<dl id="RGB6" class="blend_rgb"><dt>HTML</dt> <dd>#8F8F8F</dd><dt>RGB</dt> <dd>143/143/143</dd></dl>
-						</div>
-					</li>
-				</ul>
-</pre>
+   var. 1 = #1F409B = rgb(31,64,155)
+   var. 2 = #303D61 = rgb(48,61,97)
+   var. 3 = #041649 = rgb(4,22,73)
+   var. 4 = #7392E6 = rgb(115,146,230)
+   var. 5 = #AABAE6 = rgb(170,186,230)
+
+**Secondary Color B:**
+
+   var. 1 = #E6A317 = rgb(230,163,23)
+   var. 2 = #8F753F = rgb(143,117,63)
+   var. 3 = #6D4B03 = rgb(109,75,3)
+   var. 4 = #F9CC6D = rgb(249,204,109)
+   var. 5 = #F9E1B0 = rgb(249,225,176)
+
+**Complementary Color:**
+
+   var. 1 = #E69B17 = rgb(230,155,23)
+   var. 2 = #8F723F = rgb(143,114,63)
+   var. 3 = #6D4603 = rgb(109,70,3)
+   var. 4 = #F9C66D = rgb(249,198,109)
+   var. 5 = #F9DEB0 = rgb(249,222,176)
 
 ##Image Width
 - max 300x300
