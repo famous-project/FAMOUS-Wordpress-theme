@@ -42,38 +42,6 @@ _Werden mit dem PostType "projects" vergeben_
 - Usernames (dyn + gravatar/url)
 - sort DECS
 
-##Colors
-**Primary Color:**
-
-   var. 1 = #1C4C98 = rgb(28,76,152)<br>
-   var. 2 = #2E415F = rgb(46,65,95)<br>
-   var. 3 = #031E48 = rgb(3,30,72)<br>
-   var. 4 = #709DE5 = rgb(112,157,229)<br>
-   var. 5 = #A8C0E5 = rgb(168,192,229)<br>
-
-**Secondary Color A:**
-
-   var. 1 = #1F409B = rgb(31,64,155)<br>
-   var. 2 = #303D61 = rgb(48,61,97)<br>
-   var. 3 = #041649 = rgb(4,22,73)<br>
-   var. 4 = #7392E6 = rgb(115,146,230)<br>
-   var. 5 = #AABAE6 = rgb(170,186,230)<br>
-
-**Secondary Color B:**
-
-   var. 1 = #E6A317 = rgb(230,163,23)<br>
-   var. 2 = #8F753F = rgb(143,117,63)<br>
-   var. 3 = #6D4B03 = rgb(109,75,3)<br>
-   var. 4 = #F9CC6D = rgb(249,204,109)<br>
-   var. 5 = #F9E1B0 = rgb(249,225,176)<br>
-
-**Complementary Color:**
-
-   var. 1 = #E69B17 = rgb(230,155,23)<br>
-   var. 2 = #8F723F = rgb(143,114,63)<br>
-   var. 3 = #6D4603 = rgb(109,70,3)<br>
-   var. 4 = #F9C66D = rgb(249,198,109)<br>
-   var. 5 = #F9DEB0 = rgb(249,222,176)<br>
 
 ##Image Width
 - max 300x300
