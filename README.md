@@ -3,13 +3,23 @@ FAMOUS-Wordpress-theme
 
 Design for FAMOUS in FF - Framework
 
-Die Beispielseite ist unter: http://cm.wikibyte.org/famous/ einzusehen
+<img width="100%" src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/screenshot-home.png"> 
 
-##*Es gibt ein Framework:
-Die Funktionen können auch auf dem [Testserver](http://cm.wikibyte.org/famous/wp-content/themes/FAMOUS/famous-framework/examples/funktions.html) eingesehen werden.
+##1.) Die Beispielseite ist unter: 
+http://cm.wikibyte.org/famous/ einzusehen
 
-##**Farben und Design:
+
+##2.) Es gibt ein Framework:
+Die Funktionen können auch auf dem 
+[Testserver](http://cm.wikibyte.org/famous/wp-content/themes/FAMOUS/famous-framework/examples/funktions.html) eingesehen werden.
+
+<img width="50%" src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/screenshots1.png"><img width="50%" src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/screenshots3.png">
+
+
+##3.) Farben und Design:
 Die Farben wurde Festgelegt und können auf dem Testserver unter [color-design](http://cm.wikibyte.org/famous/wp-content/themes/FAMOUS/famous-framework/color-design.html) eingesehen werden.
+
+<img width="100%" src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/screenshots2.png"> 
 
 ##Pages
 **Zur erarbeiten:**
