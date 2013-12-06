@@ -1,6 +1,6 @@
 <?php 
 /*
- * Template Name: Welcome Page
+ * Template Name: Test Page
  *
  * @package WordPress
  * @subpackage famous-project
