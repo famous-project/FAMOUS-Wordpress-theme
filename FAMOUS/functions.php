@@ -28,8 +28,10 @@ function famous_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', __( 'Primary Menu', 'famous' ) );
-
+	register_nav_menu( 'blog', __( 'Blog Menu', 'famous' ) );
+	register_nav_menu( 'team', __( 'Team Menu', 'famous' ) );
+	register_nav_menu( 'presse', __( 'Presse Menu', 'famous' ) );
+	
 	/*
 	 * This theme supports custom background color and image, and here
 	 * we also set up the default background color.
@@ -143,19 +145,24 @@ add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
  
 ################################################# FOOTER #################################################
-function cwd_wp_bootstrap_scripts_styles() {
+function cwd_wp_famous_scripts_styles() {
   
   // Loads Bootstrap minified JavaScript file.
-  wp_enqueue_script('bootstrapjs', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js', array('jquery'),'3.0.2', true );
+  wp_enqueue_script('jquery-js', '//code.jquery.com/jquery-1.9.1.min.js', array('jquery'),'1.9.1', true );
+  wp_enqueue_script('famous-js', get_stylesheet_directory_uri(). '/famous-framework/package/famous.js', array('jquery'),'1.0.2', true );
+	#wp_enqueue_script('bootstrapjs', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js', array('jquery'),'3.0.2', true );
   
   // Loads Bootstrap minified CSS file.
-  wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', false ,'3.0.2');
+  wp_enqueue_style('famous-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.css', false ,'1.0.2');
+  wp_enqueue_style('famousicon-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.icons.css', false ,'1.0.2');
+  wp_enqueue_style('famoustheme-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.theme.css', false ,'1.0.5');  
+    #wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', false ,'3.0.2');
   
   // Loads our main stylesheet.
-  wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', array('bootstrapwp') ,'1.0');
+  wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', array('famous-css') ,'1.0');
 
 }
-add_action('wp_enqueue_scripts', 'cwd_wp_bootstrap_scripts_styles');
+add_action('wp_enqueue_scripts', 'cwd_wp_famous_scripts_styles');
 
 
 
@@ -194,8 +201,8 @@ function famous_widgets_init() {
 		'name' => __( 'Footer (1)', 'famous' ),
 		'id' => 'footer-1',
 		'description' => __( 'Footer Angaben', 'famous' ),
-		'before_widget' => '<div class="col-md-4">',
-		'after_widget' => '</div>',
+		#'before_widget' => '<div class="col-md-4">',
+		#'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );

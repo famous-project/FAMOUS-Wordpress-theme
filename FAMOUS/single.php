@@ -17,8 +17,12 @@
 	// Gets header.php
 	get_header();
 ?>
-
-
+<style>
+.menu-item{
+	border-bottom: 1px solid #eee; 
+	padding: 10px !important;
+}
+</style>
     <section class="bck dark">
         <div class="row text center">
             <nav data-famous="menu" class="column_12 padding text bold">
@@ -52,33 +56,9 @@
 								'walker'          => ''
         						)
         				);
-  					?>  					
-            </aside>
-            
-            
-            
-            <div class="column_6">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    			<article class="margin-bottom">
-                    <div class="margin-bottom">
-                        <h2><a href="<?php the_permalink(); ?>" class="text bold color theme"><?php the_title(); ?></a></h2>
-                        <small>Written by <a href="<?php bloginfo('url'); ?>/team/" class="text bold color theme">FAMOUS Team</a> on <?php the_time('l, F jS, Y'); ?></small>
-                        <hr />
-                    </div>
-    				<?php the_content(); ?>
-    			</article>
-
-					<br>
-					<br />
-    		
-    		<?php endwhile; ?>
-    		<?php endif; ?>
-            </div>    
-			
-            
-            
-            <aside class="column_3">
-				<div class="padding color color margin-bottom">
+  					?> 
+  					
+  				<div class="padding color color margin-bottom">
                     <h5 class="text normal">Kategorien</h5>
           			<form id="form" name="form" class="margin-top">
 
@@ -95,10 +75,29 @@
                 <div class="bck dark padding margin-bottom">
                     <h5 class="text color white normal">Wolke</h5>
                     <a href="#">Lorem</a>, ipsum, dolor, sit amet, consectetur, adipisicing, elit. Tempore, provident, ullam, eos, minus, neque reprehenderit veritatis deserunt.
-                </div>
+                </div> 					
             </aside>
             
             
+            
+            <div class="column_9">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    			<article class="margin-bottom">
+                    <div class="margin-bottom">
+                        <h1><a href="<?php the_permalink(); ?>" class="text bold color theme"><?php the_title(); ?></a></h1>
+                        <small>Written by <a href="<?php bloginfo('url'); ?>/team/" class="text bold color theme">FAMOUS Team</a> on <?php the_time('l, F jS, Y'); ?></small>
+                        <hr />
+                    </div>
+    				<?php the_content(); ?>
+    			</article>
+
+					<br>
+					<br />
+    		
+    		<?php endwhile; ?>
+    		<?php endif; ?>
+            </div>    
+                        
             
         </div>
     </section>

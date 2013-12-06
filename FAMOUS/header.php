@@ -26,51 +26,33 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
   <![endif]-->
+  
+  
+<style>
+body > header .logo {
+    margin-top: 7px;
+    margin-right: 8px;
+    max-height: 40px; 
+}
+
+body > footer img {
+    height: 18px;
+    position: relative;
+    top: 5px;
+    left: 2px; 
+}
+</style>
 </head>
 <body <?php body_class(); ?>>
-<div class="container">
-
-
-	<h3 class="text-muted"><a href="<?php echo home_url(); ?>" title="<?php echo get_bloginfo('title'); ?>"><img style="width:200px;" src="https://raw.github.com/SimonWaldherr/PIS-draft/master/logodrafts/d01.png" alt="FAMOUS"></a></h3>
-  	<div id="login-members"><a id="log-in" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a></div>
- 
- 
-<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-      <span class="sr-only">Navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  	<!-- Collect the nav links for toggling -->
-  <?php // Loading WordPress Custom Menu
-	wp_nav_menu( array(
-		'container_class' => 'collapse navbar-collapse navbar-collapse',
-		'menu_class'      => 'nav navbar-nav',
-		'container_id'    => 'bs-example-navbar-collapse-2',
-		'walker'          => new Cwd_wp_bootstrapwp_Walker_Nav_Menu()
-	) );
-  ?>
-</nav>
-    
-
-<?php
-//home nav
-/*
-    <div class="masthead">
-       <h3 class="text-muted"><a href="<?php echo home_url(); ?>" title="<?php echo get_bloginfo('title'); ?>"><img style="width:200px;" src="https://raw.github.com/SimonWaldherr/PIS-draft/master/logodrafts/d01.png" alt="FAMOUS"></a></h3>
-       		<!-- Collect the nav links for toggling -->
-      		<?php // Loading WordPress Custom Menu
-         		wp_nav_menu( array(
-            		'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
-            		'menu_class'      => 'nav nav-justified',
-            		#'menu_id'         => 'main-menu',
-            		'walker'          => new Cwd_wp_bootstrapwp_Walker_Nav_Menu()
-        		) );
-      		?>   
-    </div>
-*/
-?>
+	<header class="padding">
+        <div class="row">
+            <div class="column_6">
+                <a href="<?php bloginfo('url'); ?>"><img src="https://raw.github.com/famous-project/FAMOUS-pictures/master/1.png" class="logo on-left"/>
+                <h2 class="text thin">FAMOUS</h2></a>
+            </div>
+            <nav class="column_6  text right bold">
+            	<a class="button" data-famous-modal="default_modal"><span class="icon user"></span> Login</a>
+            	<a class="button alert" data-famous-modal="big_modal"><span class="icon comments-alt"></span> Kontakt</a>
+            </nav>
+        </div>
+    </header>

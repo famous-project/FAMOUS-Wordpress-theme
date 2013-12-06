@@ -10,135 +10,141 @@
 
 get_header(); ?>
 
-<div class="jumbotron" style=" background:url(img/bg.png) center center transparent no-repeat;">
-        		<br>
-        		<h1 style="padding-bottom:12px;"><span style="color:#22A6DA;">Etiamde </span><span style="color:#0E566D;">Null!</span></h1>       		
-        		<p class="lead">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. <br>Nullam id dolor id nibh ultricies vehicula</p>
-</div>
+    <section class="padding bck dark" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/land1.png) center center no-repeat #00BCEB;">
+        <div class="row margin-top">
+            <div class="column_3 padding" style="background: #FFF; border-radius: 20px;">
+                <img src="https://raw.github.com/famous-project/FAMOUS-pictures/master/1.png" class="responsive" data-tip="Hello world!" />
+            </div>
+            <div class="column_9 color white">
+                <h1 class="text bold" style="color: #000; margin-bottom: 25px;">Willkommen</h1>
+                <h5 class="text normal italic margin-bottom" style="border-radius: 10px 0px 10px 0px; background: rgba(255, 255, 255, 0.82); color: #000;padding: 10px; margin-bottom: 0px;">Famous Applications for Metadata Organizing and Utilizing Systems</h5>
+                <h4 class="text justify margin-bottom" style="border-radius: 0px 0px 10px 0px; background: rgba(0, 0, 0, 0.43); padding: 10px;">Das FAMOUS Projekt besteht aus drei kleineren Projekten. Zum einen gibt es eine Definition eines JSON Austauschformats mit dem Namen JSON Objects Data Application.</h4>
 
+                <div class="row text bold hide-phone">
+                    <div class="column_3" >
+                        <a href="http://famous-projekt.org" class="color white"><span class="icon github"></span> Find on Github</a>
+                    </div>
+                    <div class="column_6 text big right">
+                        <a href="#" class="margin-right icon facebook"></span></a>
+                        <a href="#" class="icon twitter"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<div class="container marketing">
-<hr class="featurette-divider" style="margin-top: -30px;">      	
-<div class="row">      
-        	<div class="col-lg-4">
-        		<img class="img-circle" style="width:140px;" src="http://dev.wikibyte.org/FAMOS/img/140-140.png">
-          		
-          		<h2 class="caddy">OSMOS</h2>
-          		<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          		<p><a class="btn btn-default" href="http://...">Erfahre mehr »</a></p>
-        	</div>
-        	<div class="col-lg-4">
-          		<img class="img-circle" style="width:140px;" src="http://dev.wikibyte.org/FAMOS/img/140-140.png">
-          		
-          		<h2 class="caddy">FAMOS</h2>
-          		<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          		<p><a class="btn btn-default" href="http://...">Erfahre mehr »</a></p>
-        	</div>
-        	<div class="col-lg-4">
-        		<img class="img-circle" style="width:140px;" src="http://dev.wikibyte.org/FAMOS/img/140-140.png">
-          		
-          		<h2 class="caddy">JODA</h2>
-         		<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>          
-         		<p><a class="btn btn-default" href="http://...">Erfahre mehr »</a></p>
-        	</div>
-      	</div>  	
-</div>
-
-
-
-
-
+    <section class="bck dark">
+        <div class="row text center">
+            <nav data-famous="menu" class="column_12 padding text bold">
+                <a href="<?php bloginfo('url'); ?>" class="active"><span class="icon home"></span> Home</a>
+                <a href="<?php bloginfo('url'); ?>/about/"> About </a>
+                <a href="<?php bloginfo('url'); ?>/team/"> Team </a>
+                <a href="<?php bloginfo('url'); ?>#"> Technology </a>
+                <a href="<?php bloginfo('url'); ?>/presse/"> Presse </a>
+                <a href="<?php bloginfo('url'); ?>/blog/"> News </a>
+            </nav>
+        </div>
+    </section>
 
 
 
 
+    <section class="padding bck text center">
+        
+        <div class="row">
+            <div class="column_4">
+                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                    <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
+                </a>
+                <h5><strong>JODA</strong></h5>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
+				<br><br>
+            	<a href="#" class="button theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
+            <div class="column_4">
+                <a href="examples/landing.html" target="_blank" class="tip-right" data-tip="More about OSMOS">
+                    <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
+                </a>
+                <h5><strong>OSMOS</strong></h5>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
+				<br><br>
+            	<a href="#" class="button success theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
+            <div class="column_4">
+                <a href="examples/profile.html" target="_blank" class="tip-left" data-tip="More about EMIS">
+                    <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
+                </a>
+                <h5><strong>EMIS</strong></h5>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
+				<br><br>
+            	<a href="#" class="button alert theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
 
+        </div>
+    </section>
 
-<div class="container" style="margin-top:-30px;">
-		<hr class="featurette-divider">
-
-<div class="row featurette">
-<div class="col-md-5">
-    <h2 class="caddylight featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-    <br>
+    <hr />
     
-    <p class="lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    <p><a class="btn btn-default" style="font-size:20px;" href="#">Erfahre mehr »</a></p>
-</div>
+<!--Homesite-->
+    <section class="padding bck">
+        <div class="row">
+            <div class="column_6">
+                <h2 style="font-size:50px; font-weight: 300;line-height: 1;letter-spacing: -1px;"><span class="color midle">Hallo und herzlich willkommen </span>. Auf dieser Seite</h2>
+                <br>
+                <p style="font-size:22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
 
-    <div class="col-md-7">
-    <img src="http://dev.wikibyte.org/FAMOS/img/right.png" class="img-rounded img-responsive">
-    </div>
-</div>
+            	<br>
+            	<a href="#" class="button large theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
+            <div class="column_6 text center">
+                <a href="examples/profile.html" target="_blank" class="tip-left" data-tip="Click to view">
+                    <img src="http://dev.wikibyte.org/FAMOS/img/right.png" class="responsive"/>
+                </a>
+            </div>
 
-<hr class="featurette-divider">
-
-<div class="row featurette">
-    <div class="col-md-7">
-    <img src="http://dev.wikibyte.org/FAMOS/img/left.png" class="img-rounded img-responsive">
-            
-    </div>
-<div class="col-md-5"> 
-    <h2 class="caddylight featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-    <br>
-
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. </p>
-    <p><a class="btn btn-default" style="font-size:20px;" href="#">Erfahre mehr »</a></p>
-</div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-<div class="col-md-5">
-    <h2 class="caddylight featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-    <br>
+        </div>
+    </section>
     
-    <p class="lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    <p><a class="btn btn-default" style="font-size:20px;" href="#">Erfahre mehr »</a></p>
-</div>
+    <section class="padding bck light">
+        <div class="row">
+            <div class="column_6 text center">
+                <a href="examples/profile.html" target="_blank" class="tip-right" data-tip="Click to view">
+                    <img src="http://dev.wikibyte.org/FAMOS/img/left.png" class="responsive"/>
+                </a>
+            </div>
+			 <div class="column_6">
+                <h2 style="font-size:50px; font-weight: 300;line-height: 1;letter-spacing: -1px;"><span class="color midle">Hallo und herzlich willkommen </span>. Auf dieser Seite</h2>
+                <br>
+                <p style="font-size:22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
+            	<br>
+            	<a href="#" class="button large theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="padding bck">
+        <div class="row">
+            <div class="column_6">
+                <h2 style="font-size:50px; font-weight: 300;line-height: 1;letter-spacing: -1px;"><span class="color midle">Hallo und herzlich willkommen </span>. Auf dieser Seite</h2>
+                <br>
+                <p style="font-size:22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
 
-    <div class="col-md-7">
-    <img src="http://dev.wikibyte.org/FAMOS/img/right.png" class="img-rounded img-responsive">        
-    </div>
-</div>
+            	<br>
+            	<a href="#" class="button large theme"><span class="icon right-sign"></span> Mehr erfahren </a>
+            </div>
+            <div class="column_6 text center">
+                <a href="examples/profile.html" target="_blank" class="tip-left" data-tip="Click to view">
+                    <img src="http://dev.wikibyte.org/FAMOS/img/right.png" class="responsive"/>
+                </a>
+            </div>
 
-<hr class="featurette-divider">
-</div>
+        </div>
+    </section>
+<!--Homesite-->
 
-
-
-
-
-
-
-
-
-
-
-
-<div class="container marketing">
-    <div class="row"> 
-		 <!--Shownot-->
-    			<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>
-    			<!--Xenim-->
-				<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>
-				<!--Podunion-->
-				<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>
-				<!--Podbe-->
-				<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>
-				<!--ReliveRadio-->
-				<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>
-				<!--Hoersuppe-->
-				<div class="col-lg-2"><a href=""><img data-src="holder.js/220x80" class="img-responsive img-rounded" alt="220x80" style="width: 220px; height: 80px;" src="data:image/png;base64,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"></a></div>	
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
 
 <?php 
 /*
