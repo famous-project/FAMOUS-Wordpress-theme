@@ -50,6 +50,14 @@ get_header(); ?>
             	<!--Project header-->
             	<div class="margin-bottom">
                     <h2><a href="#" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
+                	<hr />
+                    <p class="magrin-bottom">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
                 </div>
                 
                 <!--article projects-->
@@ -57,7 +65,7 @@ get_header(); ?>
 					<!--1-->
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">
@@ -78,7 +86,7 @@ get_header(); ?>
 
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">
@@ -99,7 +107,7 @@ get_header(); ?>
 				
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">
@@ -121,7 +129,7 @@ get_header(); ?>
 					<!--2-->
 				    <article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">
@@ -142,7 +150,7 @@ get_header(); ?>
 					
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">
@@ -163,7 +171,7 @@ get_header(); ?>
 					
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
+                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
                          	<hr />
                     	</div>                    
                     	<div class="row">

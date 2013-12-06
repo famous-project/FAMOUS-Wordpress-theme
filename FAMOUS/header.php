@@ -42,6 +42,10 @@ body > footer img {
     left: 2px; 
 }
 </style>
+
+
+
+
 </head>
 <body <?php body_class(); ?>>
 	<header class="padding">
@@ -51,8 +55,13 @@ body > footer img {
                 <h2 class="text thin">FAMOUS</h2></a>
             </div>
             <nav class="column_6  text right bold">
-            	<a class="button" data-famous-modal="default_modal"><span class="icon user"></span> Login</a>
-            	<a class="button alert" data-famous-modal="big_modal"><span class="icon comments-alt"></span> Kontakt</a>
+            	<?php if (!$user_ID) { 
+            		echo '<a class="button" data-famous-modal="default_modal"><span class="icon signin"></span> Login</a>
+            			 <a class="button alert" data-famous-modal="big_modal"><span class="icon comments-alt"></span> Kontakt</a>'; 
+            	} else {
+            		echo '<a class="button success" data-famous-modal="default_modal"><span class="icon signout"></span> Abmelden</a>'; 
+            	} ?>
+            	
             </nav>
         </div>
     </header>

@@ -72,26 +72,15 @@
 
 
 
-    
-    <!-- ========================== MODALS ========================== -->
-    <!--login-->
-    <div id="default_modal" data-famous="modal"  class="column_5">
-        <header>
-            <h4 class="inline text book"><span class="icon user"></span> Willkommen</h4>
-            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
-        </header>
-        <article class="form">
-            <label>Benutzername</label>
-            <input type="text" class="large" value="text">
-
-            <label>Passwort</label>
-            <input type="password" class="large" value="text">
-		</article>
-        <footer>
-            <button data-modal="close">Anmelden</button>
-        </footer>
-    </div>
-	<!--/login-->
+ <!-- ========================== MODALS ========================== -->
+	
+  	<?php
+  	
+  	/*AJAX Framework*/
+  	#<!--login-->   
+  	include("ajax/login.php");
+  	?>
+	
 	
 	<!--kontakt-->
 	<div id="big_modal" data-famous="modal" class="column_8">
@@ -127,8 +116,8 @@
     
 
 <?php wp_footer(); ?>
-    <script>
-        $(function() {
+<script>
+        (function() {
           famous.dom("button").on("click", function() {
             that = this;
             famous.Button.loading(that, true);
@@ -137,6 +126,43 @@
             }, 2000);
           });
         });
-    </script> 
+</script>
+
+
+<script>
+/**
+*	Callback Login
+*/
+$(function() {
+
+$("#start").mouseover(function() {
+
+  // Löschen bereits vorhandener JSONP Skripte
+  var scripts = document.getElementsByTagName("script");
+  for (i=0; i<scripts.length; i++) {
+    var url = scripts[i].getAttribute("src");
+    if(!url) continue;
+    if(url.indexOf("callback")>=0) {
+      scripts[i].parentNode.removeChild(scripts[i]);
+    }
+  }
+
+  // Anlegen und Einfügen des neuen Skripts
+  var now = new Date();
+  url = "<?php bloginfo('template_directory'); ?>/ajax/ajax-anmelden.php?&time="+now.getTime()+"&callback=callback";
+  
+  var script = document.createElement("script");
+  	script.setAttribute("src", url);
+  	script.setAttribute("type", "text/javascript");
+  	document.getElementsByTagName("head")[0].appendChild(script);
+	
+	
+	});
+});
+function callback(data) { 
+  document.getElementById("jsonp_antwort").innerHTML = data;
+}
+</script>    
+	
 </body>
 </html>

@@ -23,7 +23,7 @@ get_header(); ?>
         </div>
     </section>
     
-<!--the projects-->
+<!--the MEMBERS-->
     <section class="padding">
         <div class="row"> 
             <aside class="column_3">
@@ -45,149 +45,125 @@ get_header(); ?>
   					?>  					
             </aside>
 
-			<!--PROJECTS-->
+			<!--MEMBERS-->
             <div class="column_9">
             	<!--Project header-->
             	<div class="margin-bottom">
-                    <h2><a href="#" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
+                    <h2><a href="#" class="margin-bottom text color dark right"><span class="icon group"></span> Mitglieder</a></h2>
+                    <hr />
+                    <p class="magrin-bottom">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                
                 </div>
                 
-                <!--article projects-->
+                <br><br>
+                
+                <!--article MEMBERS-->
             	<div class="row">            
 					<!--1-->
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
+               		<article class="column_9 padding margin-bottom bck light">                    	                   
+                    	<div class="row">                   		
+                    		<div class="column_2 margin-bottom">
+                    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/user-300.png" class="responsive" style="border-left: 5px solid #55A5EE;">
+                    		</div>
+                    		<div class="column_6">                   		
+                    			<h4><a href="#" class="text bold color midle"> Person Name </a></h4>
+                         		<hr />
+                    		
+                    			<p>
+                        		eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    			quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                   				</p>
                     		<br>
                     		<div class="column_3 text big">
                         		<a href="#" class="margin-right icon facebook"></span></a>
                         		<a href="#" class="icon twitter"></span></a>
                     		</div>
-                    	</div>
-                		<hr />
-					</article>
-
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor Quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
+                    	<br><br>
+                    	</div>                		
 					</article>
 				
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
+					<!--2-->
+               		<article class="column_9 padding margin-bottom bck light">                    	                   
+                    	<div class="row">                   		
+                    		<div class="column_2 margin-bottom">
+                    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/user-300.png" class="responsive" style="border-left: 5px solid #55A5EE;">
+                    		</div>
+                    		<div class="column_6">                   		
+                    			<h4><a href="#" class="text bold color midle"> Person Name </a></h4>
+                         		<hr />
+                    		
+                    			<p>
+                        		eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    			quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                   				</p>
                     		<br>
                     		<div class="column_3 text big">
                         		<a href="#" class="margin-right icon facebook"></span></a>
                         		<a href="#" class="icon twitter"></span></a>
                     		</div>
-                    	</div>
-                		<hr />
+                    	<br><br>
+                    	</div>                		
+					</article>
+
+					<!--3-->
+               		<article class="column_9 padding margin-bottom bck light">                    	                   
+                    	<div class="row">                   		
+                    		<div class="column_2 margin-bottom">
+                    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/user-300.png" class="responsive" style="border-left: 5px solid #55A5EE;">
+                    		</div>
+                    		<div class="column_6">                   		
+                    			<h4><a href="#" class="text bold color midle"> Person Name </a></h4>
+                         		<hr />
+                    		
+                    			<p>
+                        		eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    			quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                   				</p>
+                    		<br>
+                    		<div class="column_3 text big">
+                        		<a href="#" class="margin-right icon facebook"></span></a>
+                        		<a href="#" class="icon twitter"></span></a>
+                    		</div>
+                    	<br><br>
+                    	</div>                		
+					</article>
+					
+					<!--4-->
+               		<article class="column_9 padding margin-bottom bck light">                    	                   
+                    	<div class="row">                   		
+                    		<div class="column_2 margin-bottom">
+                    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/user-300.png" class="responsive" style="border-left: 5px solid #55A5EE;">
+                    		</div>
+                    		<div class="column_6">                   		
+                    			<h4><a href="#" class="text bold color midle"> Person Name </a></h4>
+                         		<hr />
+                    		
+                    			<p>
+                        		eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+                    			quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                   				</p>
+                    		<br>
+                    		<div class="column_3 text big">
+                        		<a href="#" class="margin-right icon facebook"></span></a>
+                        		<a href="#" class="icon twitter"></span></a>
+                    		</div>
+                    	<br><br>
+                    	</div>                		
 					</article>
 			
-					<!--2-->
-				    <article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
 					
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color theme">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					<!--//2-->
 				</div>
-                <!--//article projects-->
+                <!--//article MEMBERS-->
         	</div>
-        	<!--//PROJECTS-->
+        	<!--//MEMBERS-->
         </div><!--//row-->
     </section>
-<!--//the projects-->
+<!--//the MEMBERS-->
 
 <?php get_footer(); ?>

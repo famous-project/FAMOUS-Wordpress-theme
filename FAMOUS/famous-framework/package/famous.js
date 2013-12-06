@@ -1,20 +1,10 @@
-/*
-FaMous - Simple (but powerful) RWD Framework
-http://FaMous.tapquo.com
-Copyright (c) 2011-2013 Tapquo S.L. - Licensed GPLv3, Commercial
-
-@namespace  FaMous
-@author     Javier Jimenez Villar <javi@tapquo.com> || @soyjavi
-*/
-
-
 (function() {
   var FaMous,
     __slice = [].slice;
 
   window.FaMous = FaMous = {};
 
-  FaMous.VERSION = "0.7";
+  FaMous.VERSION = "1.7";
 
   FaMous.dom = function() {
     var args;
