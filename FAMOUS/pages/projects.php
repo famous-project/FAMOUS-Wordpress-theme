@@ -82,21 +82,21 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 		//<!--1-->
         echo'<article class="column_3 margin-bottom">';
-            echo '<div class="margin-bottom">';
-            	echo '<h3><a href="'; the_permalink(); echo '" class="text bold color success">'. get_the_title() .'</a></h3>';
+            echo '<div class="margin-bottom text center">';
+            	echo '<h3><a href="'; the_permalink(); echo '" class="text bold color color">'. get_the_title() .'</a></h3>';
             	echo '<hr />';
 
         	echo '</div>';
             echo '<div class="row">';
             	//img
             	echo '<div class="column_3 margin-bottom text center" style="">
-            		<img class="responsive" src="'.$the_project['project_img'].'">';
+            			<img style="border: 1px solid #4389C0 !important;" class="responsive" src="'.$the_project['project_img'].'"><br><br />';
             			//Social Networks
 						foreach ($the_project['project_data'] as $the_project_social){
 							echo '<a href="'. $the_project_social['project_data_url'].'" class="color midle margin-right icon ' . $the_project_social['project_data_social'] . '"></a>';
 						}
             	echo '</div>';
-            		echo '<div class="column_3 margin-top">';
+            		echo '<div class="column_3">';
             			#echo '<p>'.$the_project['project_description'].'</p>';
            				echo '<br>';
            			echo '</div>';	

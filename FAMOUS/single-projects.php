@@ -55,7 +55,7 @@ article#contents a { color: #1B98C9; font-weight: bold; }
     <section style="padding:10px;" class="bck light">
         <div class="row">
             <div class="column_12">
-            	<h4 class="text bold"><?php echo get_the_title(); ?></h1>
+            	<h4><a href="<?php bloginfo('url'); ?>/projects/">Projekte</a>: <span class="text bold"><?php echo get_the_title(); ?></span></h1>
             </div>
         </div>
     </section>
@@ -69,7 +69,7 @@ article#contents a { color: #1B98C9; font-weight: bold; }
         				wp_nav_menu(
         				
         					array(
-        						'theme_location'=>'blog',
+        						'theme_location'=>'team',
     							'container'       => 'nav',
 								'container_class' => 'margin-bottom',
 								'items_wrap'      => '<ul style="list-style: none;">%3$s</ul>',
@@ -103,7 +103,7 @@ echo '<img class="responsive" src="'.$the_project['project_img'].'">';
 </div>
 <div class="column_5">
 <?php
-	echo '<h2 class="margin-bottom"><a href="'.$the_project['project_url'].'">'.get_the_title().'</a></h2><hr />';
+	echo '<h2 class="margin-bottom"><a class="color theme" href="'.$the_project['project_url'].'">'.get_the_title().'</a></h2><hr />';
 	echo '<p class="text normal">'.$the_project['project_description'].'</p>';
 	echo '<br>';
 	echo '<a class="button margin-bottom" href="'.$the_project['project_url'].'" title="'.get_the_title().'"><span class="icon right-sign"></span> Zur Website</a>';

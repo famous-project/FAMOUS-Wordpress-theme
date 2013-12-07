@@ -14,9 +14,13 @@
 </div> <!-- // .container -->
 
 
+
+<?php
+if(get_post_type() != 'projects') {
+//<!--footer-banner 6x-->
+?>
 <hr />
 
-<!--footer mit Banner 6x-->
 	<section class="margin-bottom">
         <div class="row padding-top padding-bottom">
             <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
@@ -28,8 +32,10 @@
         	<div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
         </div>
     </section>
-<!--footer-->
-
+<?php
+}
+//<!--//footer-banner-->
+?>
 
     <footer class="bck dark padding">
         <div class="row margin-top margin-bottom">
