@@ -1,7 +1,9 @@
 FAMOUS-Wordpress-theme
 ======================
 
-Design for FAMOUS in FF - Framework
+Design for FAMOUS in FF - Framework + Famous Fonts
+
+Die Testseite gibt es da: http://cm.wikibyte.org/famous/
 
 <img width="100%" src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/screenshot-home.png"> 
 
