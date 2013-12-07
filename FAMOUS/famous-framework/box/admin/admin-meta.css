@@ -1,0 +1,79 @@
+.my_meta_control .description
+{ display:none; }
+ 
+.my_meta_control label
+{ display:block; font-weight:bold; margin:6px; margin-bottom:0; margin-top:12px; }
+ 
+.my_meta_control label span
+{ display:inline; font-weight:normal; }
+ 
+.my_meta_control span
+{ color:#0EAF8F; display:block; float:right; }
+ 
+.my_meta_control textarea, .my_meta_control input[type='text']
+{ margin-bottom:3px; width:99%; }
+ 
+.my_meta_control h4
+{ color:#B1BDBA; font-size:1em; margin:15px 6px; text-transform:uppercase; }
+
+
+
+
+/* Tab */
+div#tabbg,
+div#persons {
+	/*background: #fff;
+	margin-left: -10px;
+	margin-right: -11px;
+	margin-top: -5px;
+	margin-bottom: -7px;
+	padding:10px;*/
+}
+
+/* Bereiche (Standard) */
+div.wpa_group {
+	padding: 10px;
+	background: #eef;
+	margin-bottom:10px;
+	border: 1px solid #AAE;
+}
+/* Buttons */
+div#persons a#button-create {
+	text-shadow: none;
+	background: #32C21F;
+	border: 1px solid #009B1F;
+	color: #fff;
+	border-radius: 0px;
+}
+input.button-create {
+	text-shadow: none;
+	background: #078CD6;
+	border: 1px solid #065A7A;
+	color: #fff;
+	border-radius: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor:pointer;
+}
+div#persons a#button-delete {
+	text-shadow: none;
+	background: #DB2E2E;
+	border: 1px solid #B10000;
+	color: #FFF;
+	border-radius: 0px;
+	float:right;
+}
+input.buttonlinks {
+	text-shadow: none;
+	background: #32C21F;
+	border: 1px solid #009B1F;
+	color: #FFF;
+	border-radius: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}

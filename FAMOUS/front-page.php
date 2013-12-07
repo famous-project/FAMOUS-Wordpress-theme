@@ -65,7 +65,7 @@ get_header(); ?>
                 h1#joda-2 { color:#063C77; font-size: 180px; margin-top: -180px; }
                 h1#joda-3 { color:#00BCEB; font-size: 180px; margin-top: -180px; margin-left: 67px;}
                 </style>
-                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <a href="#" target="_blank" class="tip-right" data-tip="More about JODA">
                 <h1 id="joda-1" class="project project-joda-half1"></h1>
                 <h1 id="joda-2" class="project project-joda-half2"></h1>
                 <h1 id="joda-3" class="project project-joda-half2"></h1>
@@ -82,7 +82,7 @@ get_header(); ?>
                 h1#osmos-1 { color:#063C77; font-size: 180px; }
                 h1#osmos-2 { color:#1B98C9; font-size: 180px; margin-top: -180px; }
                 </style>
-                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <a href="#" target="_blank" class="tip-right" data-tip="More about OSMOS">
                 <h1 id="osmos-1" class="project project-osmos-half1"></h1>
                 <h1 id="osmos-2" class="project project-osmos-half2"></h1>
                 </a>
@@ -96,7 +96,7 @@ get_header(); ?>
                 <style>
                 h1#emis-1 { color:#00BCEB; font-size: 182px; }
                 </style>
-                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <a href="#" target="_blank" class="tip-left" data-tip="More about EMIS">
                 <h1 id="emis-1" class="project project-famous"></h1>
                 </a>
                 <h5><strong>EMIS</strong></h5>

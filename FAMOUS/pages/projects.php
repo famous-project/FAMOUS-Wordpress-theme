@@ -52,14 +52,14 @@ get_header(); ?>
                     <h2><a href="#" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
                 	<hr />
                     <p class="magrin-bottom">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
-                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    <?php the_content(); ?>
                     </p>
                 </div>
-                
+				<!--article projects-->
+            	<div class="row">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php
+                /*
                 <!--article projects-->
             	<div class="row">            
 					<!--1-->
@@ -83,6 +83,86 @@ get_header(); ?>
                     	</div>
                 		<hr />
 					</article>
+					*/
+					?>
+
+
+<?php	  			
+	  			
+	//my vars
+	global $new_project;
+	
+	//Variable
+	$the_project = $new_project->the_meta();
+
+
+###----------
+
+
+#echo '<pre>';
+#print_r($the_project);
+#echo '</pre>';
+
+
+echo '<img src="'.$the_project['project_img'].'">';
+echo $the_project['project_url'];
+
+
+echo $the_project['project_description'];
+
+
+		//<!--1-->
+        echo'<article class="column_3 margin-bottom">';
+            echo '<div class="margin-bottom">';
+            	echo '<h3><a href="#" class="text bold color success">'. get_the_title() .'</a></h3>';
+            	echo '<hr />';
+        	echo '</div>';
+            echo '<div class="row">';
+            	//img
+            	echo '<div class="column_3 margin-bottom" style="height: 200px;"><img src="'.$the_project['project_img'].'"></div>';
+            		echo '<div class="column_3">';
+            			echo '<p>'.$the_project['project_description'].'</p>';
+           				echo '<br>';
+           			echo '</div>';	
+           			echo '<div class="column_3 text big">';
+               				echo '<a href="#" class="margin-right icon facebook"></span></a>';
+               				echo '<a href="#" class="icon twitter"></span></a>';
+           			echo '</div>';
+           		echo '</div>';
+           echo '<hr />';
+		echo '</article>';
+
+
+
+/*
+foreach ($meta['project_img'] as $podbe_user_s){
+
+
+
+    	//Podcast (Avatar)
+		echo '<a href="#top" style="width:100% !important;" class="th"><img id="podcast-cover" style="float: left; width:100% !important;" 
+				src="';
+			#Gravatar?
+			if ($podbe_user_s['podbe_user_avatar_input'] == 'Gravatar') {
+				echo 'http://www.gravatar.com/avatar/'.md5($podbe_user_s['podbe_user_avatar']).'?s=500" id="gravatar"';
+			}
+			#URL
+			elseif ($podbe_user_s['podbe_user_avatar_input'] == 'URL') {
+				echo 'http'.preg_replace("/(http)+/","",$podbe_user_s['podbe_user_avatar']). '" id="urlavatar"';
+			}
+			#NIX von beiden!
+			else {
+				echo '<!--Kein Cover-->';	
+			}
+			echo ' /></a>';
+			
+echo '</div>';	//-end 3
+*/
+?>
+				
+<?php endwhile; else: ?>
+	<p><?php _e('Sorry, this page does not exist.'); ?></p>
+<?php endif; ?>
 
                		<article class="column_3 margin-bottom"> 
                     	<div class="margin-bottom">

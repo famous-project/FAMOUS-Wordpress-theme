@@ -210,3 +210,132 @@ function famous_widgets_init() {
 
 }
 add_action( 'widgets_init', 'famous_widgets_init' );
+
+
+################################################# Meta Boxing #################################################
+#require_once ('famous-framework/box/famous-box.php');
+
+//Einbindung Classe
+include_once ('famous-framework/box/admin/MetaBox.php');
+
+// global styles for the meta boxes
+function metabox_style() {
+	wp_enqueue_style('famous-metabox', get_stylesheet_directory_uri() . '/famous-framework/box/admin/admin-meta.css');
+}
+if (is_admin()) add_action('admin_enqueue_scripts', 'metabox_style');
+
+
+
+
+### POST TYPE
+#
+function post_type_mediafiles_admin() {
+                 
+         //globale vars 
+         #global $user_level; //nur für leveling! 
+         global $menu;
+        
+        //registriere Post Type members
+        register_post_type ( 'projects', 
+                array (
+                 'label' => __('Projekte'),
+                                            
+                 //#23.November 2013
+                 'labels' => array (
+                        'name' => __( 'Alle Projekte' ),
+                        'singular_name' => __( 'Projekt' ),
+                        'add_new' => __( 'Neue Projektseite' ),
+                        'add_new_item' => __( 'Erstelle Projektseite' ),
+                        'edit' => __( 'Bearbeiten' ),
+                        'edit_item' => __( 'Bearbeiten Projekt' ),
+                        'new_item' => __( 'Neues Projekt' ),
+                        'view' => __( 'Projektseite Ansehen' ),
+                        'view_item' => __( 'Projektseite Ansehen' ),
+                        'search_items' => __( 'Suche durch Projekte' ),
+                        'not_found' => __( 'Kein Projekt gefunden' ),
+                        'parent' => __( 'Parent Project' ),
+                 ),
+                  'description' => __( 'Neues Project in FAMOUS anlegen?!' ),                         
+
+                  'public' => true,
+                  'show_ui' => true,
+                  'publicly_queryable' => true,
+                  'exclude_from_search' => false,
+                  
+                  'menu_position' => 2, //position in Menu!
+                  'query_var' => true, //query_var argument allows you to control the query variable used to get posts of this type in podunion
+                  #'menu_icon' => 'http://podunion.com/logo/Logo-Podcast-Magazin-50.png', //icon cover
+                  
+                  # Idea for members Plugin: Pleas Test!!!
+                  # http://wordpress.org/plugins/members/screenshots/
+                  /*
+                  // Global control over capabilities.
+                  'capability_type' => 'projects',
+                  // Specific control over capabilities.
+                  'capabilities' => array(
+                        'edit_post' => 'edit_projects',
+                        'edit_posts' => 'edit_projects',
+                        'edit_others_posts' => 'edit_others_projects',
+                        'publish_posts' => 'publish_projects',
+                        'read_post' => 'read_projects',
+                        'read_private_posts' => 'read_projects',
+                        'delete_post' => 'delete_projects',
+                  ),
+                  
+                  */
+                  
+                  //slug name:
+                  'rewrite' => array('slug' => 'projects'),
+                  
+                  //export ok!
+                  'can_export' => true,
+                  
+                  
+                  //page widgets:
+                  /*
+                  * Find mor infos to support widgets: :) M.C.
+                  *
+                  * - title: Text input field to create a post title.
+                  * - editor: Content input box for writing.
+                  * - comments: Ability to turn comments on/off.
+                  * - trackbacks: Ability to turn trackbacks and pingbacks on/off.
+                  * - revisions: Allows revisions to be made of your post.
+                  * - author: Displays a select box for changing the post author.
+                  * - excerpt: A textarea for writing a custom excerpt.
+                  * - thumbnail: The thumbnail (featured image in 3.0) uploading box.
+                  * - custom-fields: Custom fields input area.
+                  * - page-attributes:  The attributes box shown for pages. 
+                  *                           this is important for hierarchical post types, 
+                  *                           so you can select the parent post.
+                  */
+                  'supports' => array('title', 'revisions')
+                )
+        );
+        
+}
+add_action('init', 'post_type_mediafiles_admin');
+
+
+//Webplayer CSS/JS
+#function admin_register_head() {
+#		wp_enqueue_style( 'pwp-css', '/wp-content/plugins/podlove-web-player/static/podlove-web-player.css' );
+#		wp_enqueue_script( 'colorconv', get_stylesheet_directory_uri() . '/pwpdesigner/colorconv.js' );
+#		wp_enqueue_script( 'colorconv-script', get_stylesheet_directory_uri() . '/pwpdesigner/script.js' );
+#		wp_enqueue_script( 'colorconv-script', get_stylesheet_directory_uri() . '/pwpdesigner/html5slider.js' );
+#}
+#if (is_admin()) add_action('admin_enqueue_scripts', 'admin_register_head');
+
+############## Boxen erstellen
+
+$new_project = $projects = new FAMOUS_MetaBox(array
+(
+	'id' => '_project_meta', 																		//Custon Type ID
+	'title' => 'Projekt Eintragen',																	//Name der Box
+	'template' => get_stylesheet_directory() . '/famous-framework/box/admin/projects.php',  	//Einbindung (Adminpage)
+	'types' => array('projects'), 																	//Post_Types
+));
+
+
+
+
+/* eof */
