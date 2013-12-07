@@ -52,42 +52,19 @@ get_header(); ?>
                     <h2><a href="#" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
                 	<hr />
                     <p class="magrin-bottom">
+            <?php 
+            if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+            ?>
                     <?php the_content(); ?>
+            <?php endwhile;?>
+            <?php endif; ?>
                     </p>
                 </div>
 				<!--article projects-->
             	<div class="row">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php
-                /*
-                <!--article projects-->
-            	<div class="row">            
-					<!--1-->
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					*/
-					?>
-
-
-<?php	  			
+<?php 
+query_posts('post_type=projects&posts_per_page=20&orderby=rand&showposts=30'); 
+if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 	  			
 	//my vars
 	global $new_project;
@@ -96,180 +73,49 @@ get_header(); ?>
 	$the_project = $new_project->the_meta();
 
 
-###----------
-
-
 #echo '<pre>';
 #print_r($the_project);
 #echo '</pre>';
 
-
-echo '<img src="'.$the_project['project_img'].'">';
-echo $the_project['project_url'];
-
-
-echo $the_project['project_description'];
+###----------
 
 
 		//<!--1-->
         echo'<article class="column_3 margin-bottom">';
             echo '<div class="margin-bottom">';
-            	echo '<h3><a href="#" class="text bold color success">'. get_the_title() .'</a></h3>';
+            	echo '<h3><a href="'; the_permalink(); echo '" class="text bold color success">'. get_the_title() .'</a></h3>';
             	echo '<hr />';
+
         	echo '</div>';
             echo '<div class="row">';
             	//img
-            	echo '<div class="column_3 margin-bottom" style="height: 200px;"><img src="'.$the_project['project_img'].'"></div>';
-            		echo '<div class="column_3">';
-            			echo '<p>'.$the_project['project_description'].'</p>';
+            	echo '<div class="column_3 margin-bottom text center" style="">
+            		<img class="responsive" src="'.$the_project['project_img'].'">';
+            			//Social Networks
+						foreach ($the_project['project_data'] as $the_project_social){
+							echo '<a href="'. $the_project_social['project_data_url'].'" class="color midle margin-right icon ' . $the_project_social['project_data_social'] . '"></a>';
+						}
+            	echo '</div>';
+            		echo '<div class="column_3 margin-top">';
+            			#echo '<p>'.$the_project['project_description'].'</p>';
            				echo '<br>';
            			echo '</div>';	
-           			echo '<div class="column_3 text big">';
-               				echo '<a href="#" class="margin-right icon facebook"></span></a>';
-               				echo '<a href="#" class="icon twitter"></span></a>';
+           			echo '<div class="column_3 text big center">';
+               				
+            					//More
+               					echo '<a class="button margin-bottom text center" href="'; the_permalink(); echo '" title="'.get_the_title().'"><span class="icon right-sign"></span> Mehr erfahren</a><br />';
+	            	
            			echo '</div>';
            		echo '</div>';
            echo '<hr />';
 		echo '</article>';
-
-
-
-/*
-foreach ($meta['project_img'] as $podbe_user_s){
-
-
-
-    	//Podcast (Avatar)
-		echo '<a href="#top" style="width:100% !important;" class="th"><img id="podcast-cover" style="float: left; width:100% !important;" 
-				src="';
-			#Gravatar?
-			if ($podbe_user_s['podbe_user_avatar_input'] == 'Gravatar') {
-				echo 'http://www.gravatar.com/avatar/'.md5($podbe_user_s['podbe_user_avatar']).'?s=500" id="gravatar"';
-			}
-			#URL
-			elseif ($podbe_user_s['podbe_user_avatar_input'] == 'URL') {
-				echo 'http'.preg_replace("/(http)+/","",$podbe_user_s['podbe_user_avatar']). '" id="urlavatar"';
-			}
-			#NIX von beiden!
-			else {
-				echo '<!--Kein Cover-->';	
-			}
-			echo ' /></a>';
-			
-echo '</div>';	//-end 3
-*/
 ?>
 				
 <?php endwhile; else: ?>
 	<p><?php _e('Sorry, this page does not exist.'); ?></p>
 <?php endif; ?>
 
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor Quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-				
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-			
-					<!--2-->
-				    <article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, nobis molestiae eum dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					
-               		<article class="column_3 margin-bottom"> 
-                    	<div class="margin-bottom">
-                        	<h3><a href="#" class="text bold color success">Project title</a></h3>
-                         	<hr />
-                    	</div>                    
-                    	<div class="row">
-                    		<div class="column_3 img margin-bottom" style="height: 200px;"></div>
-                    		<div class="column_3">
-                    		<p>
-                        		Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. 
-                        	Culpa, dolorum, placeat, dolor incidunt id nesciunt quas porro quaerat laboriosam assumenda voluptate ipsam cupiditate nam rem obcaecati error?
-                    		</p>
-                    		<br>
-                    		<div class="column_3 text big">
-                        		<a href="#" class="margin-right icon facebook"></span></a>
-                        		<a href="#" class="icon twitter"></span></a>
-                    		</div>
-                    	</div>
-                		<hr />
-					</article>
-					<!--//2-->
+               		
 				</div>
                 <!--//article projects-->
         	</div>
