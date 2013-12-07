@@ -41,7 +41,7 @@ div#contents a { color: #1B98C9; font-weight: bold; }
     <!-- ========================== NAVIGATION ========================== --> 
     <section class="bck dark">
         <div class="row text center">
-            <nav data-tuktuk="menu" class="column_12 padding text bold">
+            <nav data-famous="menu" class="column_12 padding text bold">
                 <a href="<?php bloginfo('url'); ?>"><span class="icon home"></span> Home</a>
                 <a href="<?php bloginfo('url'); ?>/about/" class="active"> About </a>
                 <a href="<?php bloginfo('url'); ?>/team/"> Team </a>
