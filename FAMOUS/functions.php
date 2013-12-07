@@ -144,19 +144,19 @@ add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
 
  
-################################################# FOOTER #################################################
+################################################# HAEDER & FOOTER SCRIPTS #################################################
 function cwd_wp_famous_scripts_styles() {
   
-  // Loads Bootstrap minified JavaScript file.
+  // Loads FAMOUS minified JavaScript file.
   wp_enqueue_script('jquery-js', '//code.jquery.com/jquery-1.9.1.min.js', array('jquery'),'1.9.1', true );
   wp_enqueue_script('famous-js', get_stylesheet_directory_uri(). '/famous-framework/package/famous.js', array('jquery'),'1.0.2', true );
 	#wp_enqueue_script('bootstrapjs', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js', array('jquery'),'3.0.2', true );
   
-  // Loads Bootstrap minified CSS file.
+  // Loads FAMOUS minified CSS file.
   wp_enqueue_style('famous-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.css', false ,'1.0.2');
   wp_enqueue_style('famousicon-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.icons.css', false ,'1.0.2');
   wp_enqueue_style('famoustheme-css', get_stylesheet_directory_uri(). '/famous-framework/package/famous.theme.css', false ,'1.0.5');  
-    #wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', false ,'3.0.2');
+    #wp_enqueue_style('bootstrapwp', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', false ,'3.0.2');  
   
   // Loads our main stylesheet.
   wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', array('famous-css') ,'1.0');

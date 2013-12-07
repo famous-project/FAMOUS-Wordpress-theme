@@ -53,9 +53,24 @@ get_header(); ?>
         
         <div class="row">
             <div class="column_4">
+                <?php
+                /*
                 <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
                     <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
                 </a>
+                */
+                ?>
+                <style>
+                h1#joda-1 { color:#0C354D; font-size: 180px; }
+                h1#joda-2 { color:#063C77; font-size: 180px; margin-top: -180px; }
+                h1#joda-3 { color:#00BCEB; font-size: 180px; margin-top: -180px; margin-left: 67px;}
+                </style>
+                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <h1 id="joda-1" class="project project-joda-half1"></h1>
+                <h1 id="joda-2" class="project project-joda-half2"></h1>
+                <h1 id="joda-3" class="project project-joda-half2"></h1>
+                </a>
+                
                 <h5><strong>JODA</strong></h5>
                 <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel laoreet felis. Cras non enim in ligula porttitor faucibus. Proin lacus nisl, adipiscing in magna eu, venenatis euismod enim. Cras blandit in sem ac ornare. </p>
@@ -63,8 +78,13 @@ get_header(); ?>
             	<a href="#" class="button theme"><span class="icon right-sign"></span> Mehr erfahren </a>
             </div>
             <div class="column_4">
-                <a href="examples/landing.html" target="_blank" class="tip-right" data-tip="More about OSMOS">
-                    <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
+                <style>
+                h1#osmos-1 { color:#063C77; font-size: 180px; }
+                h1#osmos-2 { color:#1B98C9; font-size: 180px; margin-top: -180px; }
+                </style>
+                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <h1 id="osmos-1" class="project project-osmos-half1"></h1>
+                <h1 id="osmos-2" class="project project-osmos-half2"></h1>
                 </a>
                 <h5><strong>OSMOS</strong></h5>
                 <br>
@@ -73,8 +93,11 @@ get_header(); ?>
             	<a href="#" class="button theme"><span class="icon right-sign"></span> Mehr erfahren </a>
             </div>
             <div class="column_4">
-                <a href="examples/profile.html" target="_blank" class="tip-left" data-tip="More about EMIS">
-                    <img style="width:50%;" src="https://raw.github.com/famous-project/FAMOUS-draft/master/logodrafts/d04.png" class="center responsive"/>
+                <style>
+                h1#emis-1 { color:#00BCEB; font-size: 182px; }
+                </style>
+                <a href="examples/blog.html" target="_blank" class="tip-right" data-tip="More about JODA">
+                <h1 id="emis-1" class="project project-famous"></h1>
                 </a>
                 <h5><strong>EMIS</strong></h5>
                 <br>

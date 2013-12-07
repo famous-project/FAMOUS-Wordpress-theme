@@ -14,36 +14,39 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool - M.C. ;D
 */
 
+
+/** ==== WP_MENU ==== **/
 .menu-item{
 	border-bottom: 1px solid #eee; 
 	padding: 10px !important;
 }
-
+/** ==== CONTENT LINKS ==== **/
 div#contents a { color: #1B98C9; font-weight: bold; }
 
+/** ==== LOGIN BUTTONS ==== **/
 .inputer.login { 
-background-color: #FFF;
-color: #282D2E;
-border: 2px solid #DCE4EC;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
--ms-border-radius: 4px;
--o-border-radius: 4px;
-border-radius: 4px;
--webkit-transition: border-color 400ms;
--moz-transition: border-color 400ms;
--ms-transition: border-color 400ms;
--o-transition: border-color 400ms;
-transition: border-color 400ms;
-display: inline-block;
-width: 100%;
-padding: .5em;
-margin: .1em 0 .25em 0;
-font-weight: bolder;
-font-size: 23px;
--webkit-appearance: none;
--webkit-user-select: text;
--webkit-font-smoothing: antialiased;
+	background-color: #FFF;
+	color: #282D2E;
+	border: 2px solid #DCE4EC;
+	border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+		-webkit-transition: border-color 400ms;
+		-moz-transition: border-color 400ms;
+		-ms-transition: border-color 400ms;
+		-o-transition: border-color 400ms;
+	transition: border-color 400ms;
+	display: inline-block;
+	width: 100%;
+	padding: .5em;
+	margin: .1em 0 .25em 0;
+	font-weight: bolder;
+	font-size: 23px;
+		-webkit-appearance: none;
+		-webkit-user-select: text;
+		-webkit-font-smoothing: antialiased;
 }
 .inputer.login div { 
 	font-size: 10px;

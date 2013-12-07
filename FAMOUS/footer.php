@@ -35,12 +35,12 @@
         <div class="row margin-top margin-bottom">
             
             <div class="column_2 center">
-                <center><img style="width: 60%;" src="https://raw.github.com/famous-project/FAMOUS-pictures/master/1.png" class="center responsive"/></center>
+                <center><h1 class="project project-famous" style="font-size: 80px; color: #2EACDD;"></h1></center>
             </div>
              <div class="column_2">
                 <p class="text bold big">FAMOUS</p>
-                <a href="#" target="_blank" class="text color theme">JODA</a><br>
-                <a href="#" target="_blank" class="text color theme">OSMOS</a><br>
+                <a href="#" target="_blank" class="text color theme"><span class="project project-joda"></span> JODA</a><br>
+                <a href="#" target="_blank" class="text color theme"><span class="project project-osmos"></span> OSMOS</a><br>
                 <a href="#" target="_blank" class="text color theme">EMIS</a>
             </div>
             <div class="column_3">
