@@ -10,6 +10,7 @@ Die Testseite gibt es da: http://cm.wikibyte.org/famous/
 ##1.) Die Beispielseite ist unter: 
 http://cm.wikibyte.org/famous/ einzusehen
 
+<img src="https://raw.github.com/famous-project/FAMOUS-Wordpress-theme/master/screenshots/projects.png">
 
 ##2.) Es gibt ein Framework:
 Die Funktionen können auch auf dem 
