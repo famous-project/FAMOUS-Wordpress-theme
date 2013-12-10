@@ -49,7 +49,7 @@ get_header(); ?>
             <div class="column_9">
             	<!--Project header-->
             	<div class="margin-bottom">
-                    <h2><a href="#" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
+                    <h2><a href="<?php bloginfo('url'); ?>/projects/" class="margin-bottom text color dark right"><span class="icon sitemap"></span> PROJECTS</a></h2>
                 	<hr />
                     <p class="magrin-bottom">
             <?php 
@@ -89,8 +89,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         	echo '</div>';
             echo '<div class="row">';
             	//img
-            	echo '<div class="column_3 margin-bottom text center" style="">
-            			<img style="border: 1px solid #4389C0 !important;" class="responsive" src="'.$the_project['project_img'].'"><br><br />';
+            	echo '<div class="column_3 margin-bottom text center" style="">';
             			// check if the post has a Post Thumbnail assigned to it.
 						if ( has_post_thumbnail() ) { 
   							echo '<a href="'; the_permalink();  echo '" title="Mehr erfahren über '.get_the_title().'">';

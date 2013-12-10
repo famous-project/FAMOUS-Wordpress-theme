@@ -13,23 +13,30 @@
 ?>
 </div> <!-- // .container -->
 
-
 <hr />
 
 <!--footer mit Banner 6x-->
 	<section class="margin-bottom">
         <div class="row padding-top padding-bottom">
-            <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-            <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-            <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-            
-            <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-            <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-        	<div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
-        </div>
-    </section>
-<!--footer-->
+			<?php 
+				query_posts('post_type=projects&posts_per_page=20&orderby=rand&showposts=6'); 
+				if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
+					echo '<div class="column_2 responsive">'; 
+						// check if the post has a Post Thumbnail assigned to it.
+						if ( has_post_thumbnail() ) { 
+  							echo '<a href="'; the_permalink(); echo '" title="FAMOUS Podcast Project: '.get_the_title().'" class="tip-right" data-tip="'.get_the_title().'">';  
+  								the_post_thumbnail('large', array('class' => 'img responsive'));
+  							echo '</a>';
+						}
+					echo '</div>';
+            
+				endwhile; 
+				endif; 
+			?>
+		</div>
+    </section>
+<!--//footer-->
 
     <footer class="bck dark padding">
         <div class="row margin-top margin-bottom">

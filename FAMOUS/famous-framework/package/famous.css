@@ -450,7 +450,7 @@ div.img.h128{height:128px}
 div.img.h256{height:256px}
 div.img.h512{height:512px}
 img{border:0;-ms-interpolation-mode:bicubic;}
-img.responsive{width:100%;height:auto;}
+img.responsive{width:100% !important;height:auto;}
 img.responsive.vertical{height:100%;width:auto}
 img.responsive.rounded{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%}
 :not(.icon).tag{position:relative;top:-2px;padding:1px 3px;font-weight:bold !important;font-size:9px !important;text-transform:uppercase}
