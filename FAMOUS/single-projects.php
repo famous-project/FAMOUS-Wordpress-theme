@@ -51,11 +51,44 @@ article#contents a { color: #1B98C9; font-weight: bold; }
             </nav>
         </div>
     </section>
+
+<?php	  			
+	  			
+	//my vars
+	global $new_project;
+	
+	//Variable
+	$the_project = $new_project->the_meta();
+	
+	//tests
+	echo '<pre>';
+	#print_r($the_project);
+	echo '</pre>';
+?>
     
     <section style="padding:10px;" class="bck light">
         <div class="row">
             <div class="column_12">
-            	<h4><a href="<?php bloginfo('url'); ?>/projects/">Projekte</a>: <span class="text bold"><?php echo get_the_title(); ?></span></h1>
+            <?php 
+            //Projects Header Breadcumb
+            if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            	
+            	<div class="row">
+            		<div class="column_11 text left">
+            		<h4><a href="<?php bloginfo('url'); ?>/projects/">Projekt</a>: <span class="text bold"><?php echo get_the_title(); ?></span></h4>
+            		</div>
+            	</div>
+            	<div class="row">
+            		<?php 
+            		if ($the_project['project_icon']) { 
+            			echo '<div class="column_1 nohandy">
+            				<h4 style="float: right;" class="podcast '.$the_project['project_icon']. '"></h4>
+            			</div>'; 
+            		} 
+            		?>
+            	</div>
+            <?php endwhile; ?>
+			<?php endif; ?>
             </div>
         </div>
     </section>
@@ -82,23 +115,15 @@ article#contents a { color: #1B98C9; font-weight: bold; }
             </aside>
             <article class="column_9" id="contents">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php	  			
-	  			
-	//my vars
-	global $new_project;
-	
-	//Variable
-	$the_project = $new_project->the_meta();
-	
-	//tests
-	echo '<pre>';
-	#print_r($the_project);
-	echo '</pre>';
-?>
 <div class="row">
 <div class="column_4 margin-bottom">
 <?php
-echo '<img class="responsive" src="'.$the_project['project_img'].'">';
+// check if the post has a Post Thumbnail assigned to it.
+if ( has_post_thumbnail() ) { 
+  echo '<a href="'.$the_project['project_url'].'" title="FAMOUS Podcast Project: '.get_the_title().'" >';
+  the_post_thumbnail('medium', array('class' => 'responsive'));
+  echo '</a>';
+}
 ?>
 </div>
 <div class="column_5">

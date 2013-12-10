@@ -91,6 +91,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             	//img
             	echo '<div class="column_3 margin-bottom text center" style="">
             			<img style="border: 1px solid #4389C0 !important;" class="responsive" src="'.$the_project['project_img'].'"><br><br />';
+            			// check if the post has a Post Thumbnail assigned to it.
+						if ( has_post_thumbnail() ) { 
+  							echo '<a href="'; the_permalink();  echo '" title="Mehr erfahren über '.get_the_title().'">';
+  								the_post_thumbnail('medium', array('class' => 'responsive'));
+  							echo '</a>';
+						}
+            			
             			//Social Networks
 						foreach ($the_project['project_data'] as $the_project_social){
 							echo '<a href="'. $the_project_social['project_data_url'].'" class="color midle margin-right icon ' . $the_project_social['project_data_social'] . '"></a>';

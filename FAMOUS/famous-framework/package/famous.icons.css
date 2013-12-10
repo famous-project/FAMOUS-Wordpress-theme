@@ -1,8 +1,10 @@
 /** 
 *							========  FAMOUS ICONS  ======== 
 **/
-.project {
-	font-family: 'famous';
+
+
+.podcast {
+	font-family: 'Podcast Projects';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -15,27 +17,85 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.project-joda-half2:before {
+.podcast-podbe-full:before {
 	content: "\e600";
 }
-.project-joda:before {
+.podcast-podbe:before {
 	content: "\e601";
 }
-.project-joda-half1:before {
+.podcast-podbe-w:before {
 	content: "\e602";
 }
-.project-osmos-half2:before {
+.podcast-hoersuppe-vorcast:before {
 	content: "\e603";
 }
-.project-osmos-half1:before {
-	content: "\e604";
+.podcast-podcastideen:before {
+	content: "\e60c";
 }
-.project-famous:before {
-	content: "\e605";
+.podcast-podlove:before {
+	content: "\e60b";
 }
-.project-osmos:before {
+.podcast-bitlove:before {
+	content: "\e60a";
+}
+.podcast-hoersuppe:before {
 	content: "\e606";
 }
+.podcast-podunion-full:before {
+	content: "\e607";
+}
+.podcast-reliveradio:before {
+	content: "\e604";
+}
+.podcast-xenim:before {
+	content: "\e605";
+}
+.podcast-firtz:before {
+	content: "\e609";
+}
+.podcast-auphonic-full:before {
+	content: "\e60d";
+}
+.podcast-auphonic:before {
+	content: "\e60e";
+}
+.podcast-shownotes:before {
+	content: "\e60f";
+}
+.podcast-shownotes-full:before {
+	content: "\e613";
+}
+.podcast-metaebene:before {
+	content: "\e614";
+}
+.podcast-metaebene-full:before {
+	content: "\e608";
+}
+.podcast-podunion:before {
+	content: "\e615";
+}
+.podcast-joda:before {
+	content: "\e610";
+}
+.podcast-famous:before {
+	content: "\e611";
+}
+.podcast-osmos:before {
+	content: "\e612";
+}
+.podcast-joda-half2:before {
+	content: "\e616";
+}
+.podcast-joda-half1:before {
+	content: "\e617";
+}
+.podcast-osmos-half2:before {
+	content: "\e618";
+}
+.podcast-osmos-half1:before {
+	content: "\e619";
+}
+
 
 
 

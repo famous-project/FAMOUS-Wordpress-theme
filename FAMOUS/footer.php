@@ -14,13 +14,9 @@
 </div> <!-- // .container -->
 
 
-
-<?php
-if(get_post_type() != 'projects') {
-//<!--footer-banner 6x-->
-?>
 <hr />
 
+<!--footer mit Banner 6x-->
 	<section class="margin-bottom">
         <div class="row padding-top padding-bottom">
             <div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
@@ -32,21 +28,19 @@ if(get_post_type() != 'projects') {
         	<div><img class="tip-top column_2 bck light text center" data-tip="Hello world!" src="<?php echo get_stylesheet_directory_uri(); ?>/famous-framework/img/projects.png"></div>
         </div>
     </section>
-<?php
-}
-//<!--//footer-banner-->
-?>
+<!--footer-->
+
 
     <footer class="bck dark padding">
         <div class="row margin-top margin-bottom">
             
             <div class="column_2 center">
-                <center><h1 class="project project-famous" style="font-size: 80px; color: #2EACDD;"></h1></center>
+                <center><h1 class="podcast podcast-famous" style="font-size: 80px; color: #2EACDD;"></h1></center>
             </div>
              <div class="column_2">
                 <p class="text bold big">FAMOUS</p>
-                <a href="#" target="_blank" class="text color theme"><span class="project project-joda"></span> JODA</a><br>
-                <a href="#" target="_blank" class="text color theme"><span class="project project-osmos"></span> OSMOS</a><br>
+                <a href="#" target="_blank" class="text color theme"><span class="podcast podcast-joda"></span> JODA</a><br>
+                <a href="#" target="_blank" class="text color theme"><span class="podcast podcast-osmos"></span> OSMOS</a><br>
                 <a href="#" target="_blank" class="text color theme">EMIS</a>
             </div>
             <div class="column_3">
@@ -169,6 +163,6 @@ function callback(data) {
   document.getElementById("jsonp_antwort").innerHTML = data;
 }
 </script>    
-	
+
 </body>
 </html>

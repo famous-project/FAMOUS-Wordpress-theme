@@ -1,17 +1,16 @@
-<?php
-/**
- * The sidebar containing the main widget area.
- *
- * If no active widgets in sidebar, let's hide it completely.
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
- */
-?>
+<div class="five columns ">
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
-		</div><!-- #secondary -->
+<div id="right">
+<!-- 125px banners -->	
+<?php include (TEMPLATEPATH . '/sponsors.php'); ?>	
+
+<!-- Sidebar widgets -->
+<div class="sidebar">
+<ul>
+	<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar') ) : else : ?>
 	<?php endif; ?>
+</ul>
+</div>
+</div>
+
+</div>

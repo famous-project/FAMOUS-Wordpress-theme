@@ -8,6 +8,9 @@
  *
  * @return void
  */
+################################################# WIDGETS #################################################
+include 'inc/font-page-3column-widget.php'; //Start
+include 'inc/font-page-2column-widget.php';
 
 ################################################# SETUP #################################################
 
@@ -188,7 +191,17 @@ require_once 'inc/nav.php';
 
 function famous_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'famous' ),
+		'name' => __( 'FONT-PAGE', 'famous' ),
+		'id' => 'font-page',
+		'description' => __( '3 Colums', 'famous' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Main Sidebar (Blog)', 'famous' ),
 		'id' => 'sidebar-1',
 		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'famous' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -206,7 +219,6 @@ function famous_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
 
 }
 add_action( 'widgets_init', 'famous_widgets_init' );
@@ -308,7 +320,7 @@ function post_type_mediafiles_admin() {
                   *                           this is important for hierarchical post types, 
                   *                           so you can select the parent post.
                   */
-                  'supports' => array('title', 'revisions')
+                  'supports' => array('title', 'revisions', 'thumbnail')
                 )
         );
         
