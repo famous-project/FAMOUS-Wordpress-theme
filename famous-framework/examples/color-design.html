@@ -1,25 +1,26 @@
-<pre>
-/*
- * famous coloring
- * @dev Michael McCouman JR.
- * @idea version 1.0
- */
-</pre>
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>FAMOUS - Framework </title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../package/css/famous.theme.css">
+</head>
+<body style="margin:0;">
 <style>
-td {
-	height: 50px;
-	width: 200px;
-}
-.code1 { color: #eee; }
+td { height: 50px; width:400px; }
+.code1 { color: #eee; background-color: #000 !important; }
+.code { background-color: #fff !important; }
+div#darks .bck { color: #eee; }
 </style>
-<div style="background: #000; color: #fff;">                  
+<div id="darks" style="background: #000; color: #fff; padding: 15px;">                  
                    <h4>Color 1:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-pri-3" style="background-color: #EDF9FC"></td>
-                   <td class="cbox bg-pri-0" style="background-color: #00BCEB"></td>
-                   <td class="cbox bg-pri-1" style="background-color: #1B98C9"></td>
+                   <td class="bck light" style="color:#000;"> light </td>
+                   <td class="bck theme"> theme </td>
+                   <td class="bck midle"> midle </td>
                    </tr>
                    <tr>
                    <td class="code1">#EDF9FC</td>
@@ -31,9 +32,9 @@ td {
                    <h4>Color 2:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-pri-2" style="background-color: #3293CA"></td>
-                   <td class="cbox bg-pri-4" style="background-color: #0C354D"></td>
-                   <td class="cbox bg-pri-4" style="background-color: #063C77"></td>
+                   <td class="bck light-dark"> light-dark </td>
+                   <td class="bck midle-dark"> midle-dark </td>
+                   <td class="bck dark"> dark </td>
                    </tr>
                    
                    <tr>
@@ -42,14 +43,13 @@ td {
                    <td class="code1">#063C77</td>
                    </tr>                 
                    </table>
-                   
-                   
-                   <h4>Color A:</h4>
+
+                   <h4>Color 3:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-sec1-3" style="background-color: #FFFAF2"></td>
-                   <td class="cbox bg-sec1-1" style="background-color: #E69A17"></td>
-                   <td class="cbox bg-sec1-2" style="background-color: #6D4603"></td>
+                   <td class="bck success-light" style="color:#000;"> success-light </td>
+                   <td class="bck success"> success </td>
+                   <td class="bck success-dark"> success-dark </td>
                    </tr>                   
                    <tr>
                    <td class="code1">#FFFAF2</td>
@@ -57,28 +57,28 @@ td {
                    <td class="code1">#6D4603</td>
                    </tr>
                    </table>
+                   
+                   <h4>Color 4:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-sec1-0" style="background-color: #C4D2DF"></td>
-                   <td class="cbox bg-sec1-4" style="background-color: #9B9B9B"></td>
-                   <td class="cbox bg-sec1-0" style="background-color: #E74C3C"></td>
+                   <td class="bck midle-light" style="color:#000;"> midle-light </td>
+                   <td class="bck alert"> alert </td>
                    </tr>
                    <tr>
                    <td class="code1">#C4D2DF</td>
-                   <td class="code1">#9B9B9B</td>
                    <td class="code1">#E74C3C</td>
                    </tr>
                    </table>
 </div>
 
-<div>
-<div style="background: #fff; color: #000;">                  
-                   <h4>Color 1:</h4>
+
+<div id="darks" style="background: #fff; color: #000; padding: 15px;">                  
+                 <h4>Color 1:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-pri-3" style="background-color: #EDF9FC"></td>
-                   <td class="cbox bg-pri-0" style="background-color: #00BCEB"></td>
-                   <td class="cbox bg-pri-1" style="background-color: #1B98C9"></td>
+                   <td class="bck light" style="color:#000;"> light </td>
+                   <td class="bck theme"> theme </td>
+                   <td class="bck midle"> midle </td>
                    </tr>
                    <tr>
                    <td class="code">#EDF9FC</td>
@@ -90,9 +90,9 @@ td {
                    <h4>Color 2:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-pri-2" style="background-color: #3293CA"></td>
-                   <td class="cbox bg-pri-4" style="background-color: #0C354D"></td>
-                   <td class="cbox bg-pri-4" style="background-color: #063C77"></td>
+                   <td class="bck light-dark color white"> light-dark </td>
+                   <td class="bck midle-dark"> midle-dark </td>
+                   <td class="bck dark"> dark </td>
                    </tr>
                    
                    <tr>
@@ -103,12 +103,12 @@ td {
                    </table>
                    
                    
-                   <h4>Color A:</h4>
+                   <h4>Color 3:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-sec1-3" style="background-color: #FFFAF2"></td>
-                   <td class="cbox bg-sec1-1" style="background-color: #E69A17"></td>
-                   <td class="cbox bg-sec1-2" style="background-color: #6D4603"></td>
+                   <td class="bck success-light" style="color:#000;"> success-light </td>
+                   <td class="bck success"> success </td>
+                   <td class="bck success-dark"> success-dark </td>
                    </tr>                   
                    <tr>
                    <td class="code">#FFFAF2</td>
@@ -116,17 +116,18 @@ td {
                    <td class="code">#6D4603</td>
                    </tr>
                    </table>
+                   
+                   <h4>Color 4:</h4>
                    <table class="info-table">
                    <tr>
-                   <td class="cbox bg-sec1-0" style="background-color: #C4D2DF"></td>
-                   <td class="cbox bg-sec1-4" style="background-color: #9B9B9B"></td>
-                   <td class="cbox bg-sec1-0" style="background-color: #E74C3C"></td>
+                   <td class="bck midle-light" style="color:#000;"> midle-light </td>
+                   <td class="bck alert"> alert </td>
                    </tr>
                    <tr>
                    <td class="code">#C4D2DF</td>
-                   <td class="code">#9B9B9B</td>
                    <td class="code">#E74C3C</td>
                    </tr>
                    </table>
 </div>
-  
+</body>
+</html>
