@@ -139,6 +139,7 @@
 <script>
 /**
 *	Callback Login
+jQuery(function($) - for wp session
 */
 $(function() {
 
